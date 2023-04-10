@@ -1,0 +1,13 @@
+import random
+
+ideas = ["Dream", "Reflection", "Momentum", "Serenity", "Vibrance", "Catalyst", "Eclipse", "Enigma", "Luminance", "Ascension", "Intrigue", "Whimsy", "Euphoria", "Serendipity", "Harmony", "Flux", "Resonance", "Convergence", "Spectrum", "Equilibrium", "Paradox", "Infinity", "Chaos", "Aurora", "Perception", "Radiance", "Genesis", "Reverie", "Awe", "Illumination", "Phoenix", "Intuition", "Fusion", "Surrealism", "Zen", "Transcendence", "Interlude", "Kaleidoscope", "Velocity", "Metamorphosis", "Nebula", "Empathy", "Evanescent", "Rhapsody", "Alchemy", "Solitude", "Euphony", "Metropolis"]
+materials = ["Polymer clay", "Wood", "Beads", "Felt", "Cardboard", "Glass beads", "Paper", "Metal wire", "Fabric", "Feathers", "Leather", "Ribbon", "Yarn", "Plastic", "Paint", "Markers", "Ink", "Charcoal", "Chalk", "Pastels", "Watercolors", "Acrylics", "Oil paints", "Gold leaf", "Silver leaf", "Glitter", "Sequins", "Buttons", "Rhinestones", "Shells", "Sand", "Moss", "Rocks", "Bark", "Seeds", "Pinecones", "Twigs", "Cork", "Paper clips", "Rubber bands", "Foam", "Wire mesh", "Clay pots", "Pipe cleaners", "Toothpicks", "Tissue paper", "Gauze", "Vinegar", "Baking soda"]
+colors = ["Scarlet", "Rose", "Crimson", "Burgundy", "Maroon", "Magenta", "Lavender", "Lilac", "Violet", "Indigo", "Cobalt", "Sky Blue", "Turquoise", "Teal", "Emerald", "Jade", "Forest Green", "Olive", "Chartreuse", "Lime", "Lemon", "Yellow", "Goldenrod", "Orange", "Tangerine", "Coral", "Peach", "Salmon", "Apricot", "Tan", "Beige", "Khaki", "Brown", "Chocolate", "Coffee", "Taupe", "Gray", "Charcoal", "Silver", "Platinum", "White", "Ivory", "Cream", "Alabaster", "Black", "Onyx", "Navy", "Royal Blue"]
+
+def generate_art():
+    idea = random.choice(ideas)
+    material = random.choice(materials)
+    color = random.choice(colors)
+    return f"{idea} using {material} in {color}"
+
+print(generate_art())
